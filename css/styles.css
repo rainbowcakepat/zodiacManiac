@@ -168,6 +168,16 @@ p {
   color: white;
 } 
 
+.back_btn {
+  border-radius: 12px;
+  background-color: #FFC0CB;
+}
+
+.back_btn:hover {
+  color: white;
+}
+
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -7778,7 +7788,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .text-reset {

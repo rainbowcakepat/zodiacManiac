@@ -43,6 +43,7 @@ if (isset($_POST['send'])){
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Your Zodiac</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#horoscope">Daily Horoscope</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="about.php">About Us</a></li>
                     </ul>
                  
                 </div>
@@ -63,11 +64,13 @@ if (isset($_POST['send'])){
                             
                             <h1 class="text-white display-1 lh-1 mb-3">Welcome to Zodiac Maniac!</h1>
                             <p class="text-white lead fw-normal text-white-50 mb-5">It's time! the constellations are here to tell your brightest destiny, know your fate in just one click</p>
-                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <div class="d-flex flex-column flex-lg-row align-items-center mb-5">
                                 <form method="post" action="index.php">
-                                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" style="background-color: violet;" required><br><br>
-                                    <input type="date" id="birthday" name="birthday" required><br><br>
-                                    <input type="submit" name="send" value="  Send to the stars 🌠" ><br><br>
+                                    <span class="text-white lead fw-normal mb-5">Name: </span> 
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name    " style="background-color: white; border-radius: 5px" required><br><br>
+                                    <span class="text-white lead fw-normal mb-5">Birthday: </span> 
+                                    <input type="date" id="birthday" name="birthday" style="background-color: white; border-radius: 5px; width: 200px" required><br><br>
+                                    <input type="button" name="send" value="  Send to the stars 🌠" style="border-radius: 10px; background-color: #FFC0CB;"><br><br>
                                 </form>
                             </div>
                         </div>
@@ -176,16 +179,15 @@ if (isset($_POST['send'])){
                                                         */
 
 
-
                                                         else {
-                                                            echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                            echo  "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”.";
                                                         }
                                                        
                                                        
                                                       
                                                     } else {
                                                         
-                                                        echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                        echo  "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”.";
                                                         
                                                     }
                                                   
@@ -451,13 +453,13 @@ if (isset($_POST['send'])){
             <div class="container px-5">
                 <div class="text-white-50 small">
                     <div class="mb-2">&copy; Gurlalu Productions 2021. All Rights Reserved.</div>
-                    <a href="#!">Dionson</a>
+                   Dionson
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Loseñada</a>
+                   Loseñada
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Ong</a>
+                   Ong
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Valenzuela</a>
+                   Valenzuela
                 </div>
             </div>
         </footer>
