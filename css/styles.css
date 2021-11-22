@@ -75,6 +75,8 @@
   }
 }
 
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -156,6 +158,15 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+.icon {
+  background-color: #4CAF50;
+}
+
+.icon:hover {
+  
+  color: white;
+} 
 
 abbr[title],
 abbr[data-bs-original-title] {

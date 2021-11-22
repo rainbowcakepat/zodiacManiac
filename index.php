@@ -138,9 +138,11 @@ if (isset($_POST['send'])){
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-moon-stars-fill icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Zodiac Sign</h3>
+                                        <a href="zodiac.php" style="color: #000000 ;" ><h3 class="font-alt">Zodiac Sign</h3></a>
 
                                         <?php
+
+                                        
 
                                             class Zodiac {
 
@@ -187,22 +189,78 @@ if (isset($_POST['send'])){
                                                         
                                                     }
                                                   
-
-                                
-                                                 
-
-                                                    
+                                   
                                                 }
                                             }
 
                                             class Personality extends Zodiac{
 
                                                 function getInformation() {
-                                                    echo "This is the Personality class";
+                                                    if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
+                                                    {
+                                                       $monthWord = date("F",strtotime($_COOKIE['bday']));
+                                                       $day =  date("d",strtotime($_COOKIE['bday']));
+                                                       
+                                                       //Leo
+                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                           echo 'Leo is the fifth Zodiac Sign covering the period from the 23rd of July to 22nd of August.';
+                                                       }
+                                                       //Aquarius
+                                                       else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                                           echo "Aquarius is the eleventh Zodiac Sign covering the period from the 20th of January to 18th of February";
+                                                       }
+                                                       //Virgo
+                                                       else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                                           echo "
+                                                           Virgo is the sixth Zodiac Sign covering the period from the 23rd of August to 22nd of September.";
+                                                       } 
+                                                       
+                                                       /*
+                                                       
+                                                       Dagdagan niyo dito
+
+
+                                                       */
+
+
+
+                                                       else {
+                                                           echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                       }
+                                                      
+                                                      
+                                                     
+                                                   } else {
+                                                       
+                                                       echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                       
+                                                   }
+                                                 
+                                  
+                                               }
+                                                
+                                            }
+
+                                            class Elements extends Zodiac{
+
+                                                function getInformation() {
+                                                    echo "This is the Element class";
+                                                }
+                                            }
+
+                                            class Relationships extends Zodiac{
+
+                                                function getInformation() {
+                                                    echo "This is the Relationship class";
                                                 }
                                             }
 
                                             $zodiacObject = new Zodiac();
+                                            $personalityObject = new Personality();
+                                            $elementObject = new Elements();
+                                            $relationshipObject = new Relationships();
+                                            
+
                             
 
                                             
@@ -222,8 +280,8 @@ if (isset($_POST['send'])){
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-people icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Personality</h3>
-                                        <p class="text-muted mb-0">Strengths, weaknesses, likes, dislk, video, animation, or anything else in the screen!</p>
+                                        <a href="personality.php" style="color: #000000 ;" ><h3 class="font-alt">Personality</h3></a>
+                                        <p class="text-muted mb-0"><?php echo $personalityObject -> getInformation(); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -232,16 +290,16 @@ if (isset($_POST['send'])){
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Element</h3>
-                                        <p class="text-muted mb-0">Sample Zodiac Element here</p>
+                                        <a href="element.php" style="color: #000000 ;" ><h3 class="font-alt">Element</h3></a>
+                                        <p class="text-muted mb-0"><?php echo $elementObject -> getInformation(); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-bookmark-heart-fill icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Relationships</h3>
-                                        <p class="text-muted mb-0">Sample relationship compatibility here</p>
+                                        <a href="relationship.php" style="color: #000000 ;" ><h3 class="font-alt">Relationship</h3></a>
+                                        <p class="text-muted mb-0"><?php echo $relationshipObject -> getInformation(); ?></p>
                                     </div>
                                 </div>
                             </div>
