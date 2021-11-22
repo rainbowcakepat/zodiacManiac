@@ -154,16 +154,28 @@ if (isset($_POST['send'])){
                                                         
                                                         //Leo
                                                         if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
-                                                            echo 'Leo';
+                                                            echo 'Leo is the fifth Zodiac Sign covering the period from the 23rd of July to 22nd of August.';
                                                         }
                                                         //Aquarius
                                                         else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
-                                                            echo 'Aquarius';
+                                                            echo "Aquarius is the eleventh Zodiac Sign covering the period from the 20th of January to 18th of February";
                                                         }
                                                         //Virgo
                                                         else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
-                                                            echo 'Virgo';
-                                                        } else {
+                                                            echo "
+                                                            Virgo is the sixth Zodiac Sign covering the period from the 23rd of August to 22nd of September.";
+                                                        } 
+                                                        
+                                                        /*
+                                                        
+                                                        Dagdagan niyo dito
+
+
+                                                        */
+
+
+
+                                                        else {
                                                             echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
                                                         }
                                                        
