@@ -203,17 +203,16 @@ if (isset($_POST['send'])){
                                                        
                                                        //Leo
                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
-                                                           echo 'Leo is the fifth Zodiac Sign covering the period from the 23rd of July to 22nd of August.';
+                                                           echo "Leos are known to be born as natural leaders who are creative and eager to conquer everything.";
                                                        }
                                                        //Aquarius
                                                        else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
-                                                           echo "Aquarius is the eleventh Zodiac Sign covering the period from the 20th of January to 18th of February";
-                                                       }
+                                                            echo "Aquarius are known to be incredibly innovative, self-reliant and clever in everything that they do.";
+                                                        }
                                                        //Virgo
                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
-                                                           echo "
-                                                           Virgo is the sixth Zodiac Sign covering the period from the 23rd of August to 22nd of September.";
-                                                       } 
+                                                            echo "Virgos are known to be humble, practical and sympathetic person that you will meet in the world.";
+                                                        } 
                                                        
                                                        /*
                                                        
@@ -225,14 +224,14 @@ if (isset($_POST['send'])){
 
 
                                                        else {
-                                                           echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                           echo  "Unleash the inner you! Know more about yourself through the constellations.";
                                                        }
                                                       
                                                       
                                                      
                                                    } else {
                                                        
-                                                       echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                        echo  "Unleash the inner you! Know more about yourself through the constellations.";
                                                        
                                                    }
                                                  
@@ -244,8 +243,47 @@ if (isset($_POST['send'])){
                                             class Elements extends Zodiac{
 
                                                 function getInformation() {
-                                                    echo "This is the Element class";
-                                                }
+                                                    if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
+                                                    {
+                                                       $monthWord = date("F",strtotime($_COOKIE['bday']));
+                                                       $day =  date("d",strtotime($_COOKIE['bday']));
+                                                       
+                                                       //Leo
+                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                           echo "Leos are known to be born as natural leaders who are creative and eager to conquer everything.";
+                                                       }
+                                                       //Aquarius
+                                                       else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                                            echo "Aquarius are known to be incredibly innovative, self-reliant and clever in everything that they do.";
+                                                        }
+                                                       //Virgo
+                                                       else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                                            echo "Virgos are known to be humble, practical and sympathetic person that you will meet in the world.";
+                                                        } 
+                                                       
+                                                       /*
+                                                       
+                                                       Dagdagan niyo dito
+
+
+                                                       */
+
+
+
+                                                       else {
+                                                           echo  "Unleash the inner you! Know more about yourself through the constellations.";
+                                                       }
+                                                      
+                                                      
+                                                     
+                                                   } else {
+                                                       
+                                                        echo  "Unleash the inner you! Know more about yourself through the constellations.";
+                                                       
+                                                   }
+                                                 
+                                  
+                                               }
                                             }
 
                                             class Relationships extends Zodiac{
@@ -261,13 +299,6 @@ if (isset($_POST['send'])){
                                             $relationshipObject = new Relationships();
                                             
 
-                            
-
-                                            
-                                            
-
-                                        
-                                        
                                         ?>
                                 
                                     <p class="text-muted mb-0"><?php echo $zodiacObject -> getInformation(); ?></p>
