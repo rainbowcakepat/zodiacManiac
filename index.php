@@ -289,8 +289,47 @@ if (isset($_POST['send'])){
                                             class Relationships extends Zodiac{
 
                                                 function getInformation() {
-                                                    echo "This is the Relationship class";
-                                                }
+                                                    if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
+                                                    {
+                                                       $monthWord = date("F",strtotime($_COOKIE['bday']));
+                                                       $day =  date("d",strtotime($_COOKIE['bday']));
+                                                       
+                                                       //Leo
+                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                        echo "The most compatible signs with a Leo are Aries, Sagittarius, Gemini and Libra";
+                                                        }
+                                                       //Aquarius
+                                                       else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                                            echo "The most compatible signs with an Aquarius are Aries, Sagittarius, Gemini and Libra.";
+                                                        }
+                                                       //Virgo
+                                                       else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                                            echo "The most compatible signs with a Virgo are Taurus, Capricorn and fellow Virgo.";
+                                                        } 
+                                                       
+                                                       /*
+                                                       
+                                                       Dagdagan niyo dito
+
+
+                                                       */
+
+
+
+                                                       else {
+                                                           echo "Looking for a soulmate? See which sign is compatible with yours";
+                                                       }
+                                                      
+                                                      
+                                                     
+                                                   } else {
+                                                       
+                                                        echo "Looking for a soulmate? See which sign is compatible with yours";
+                                                       
+                                                   }
+                                                 
+                                  
+                                               }
                                             }
 
                                             $zodiacObject = new Zodiac();
