@@ -61,7 +61,7 @@ echo "about";
                             <p class="text-white lead fw-normal">The Gurlalu team is comprised of four members namely Franchesca Dionson, Jaira Ong, Dwayne Loseñada and Patricia Valenzuela. They made a project called Zodiac Maniac, allowing the user to know more about their Astrological Signs</p>
                             <br>
                             </div>
-                            <form method="post" action="index.php">
+                            <form action="index.php">
                                 <input type="submit" name="back" value="  Go back to main menu 🌠" style="border-radius: 12px; background-color: #FFC0CB;"><br><br>
                             </form>
 

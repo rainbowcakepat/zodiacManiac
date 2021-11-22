@@ -70,7 +70,7 @@ if (isset($_POST['send'])){
                                     <input type="text" id="fullName" name="fullName" placeholder="Enter your full name    " style="background-color: white; border-radius: 5px" required><br><br>
                                     <span class="text-white lead fw-normal mb-5">Birthday: </span> 
                                     <input type="date" id="birthday" name="birthday" style="background-color: white; border-radius: 5px; width: 200px" required><br><br>
-                                    <input type="button" name="send" value="  Send to the stars 🌠" style="border-radius: 10px; background-color: #FFC0CB;"><br><br>
+                                    <input type="submit" name="send" value="  Send to the stars 🌠" style="border-radius: 10px; background-color: #FFC0CB;"><br><br>
                                 </form>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ if (isset($_POST['send'])){
                                         <?php
 
                                         
-
+                                            //OVER RIDING
                                             class Zodiac {
 
 
@@ -242,13 +242,28 @@ if (isset($_POST['send'])){
                                                 
                                             }
 
-                                            class Elements extends Zodiac{
+                                            //ABSTRACTION
+                                            abstract class Information {
+    
+                                                public $type; //no initial value
+                                                
+                                                public abstract function display(); //declare bc depende sa class iimplement
+                                            
+                                                // public abstract function display();
+                                            
+                                                function __construct($type) { //needs a constructor
+                                                    $this->type = $type;
+                                                }
+                                            }
+                                            
 
-                                                function getInformation() {
+                                            class Elements extends Information{
+
+                                                function display() {
                                                     if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
                                                     {
-                                                       $monthWord = date("F",strtotime($_COOKIE['bday']));
-                                                       $day =  date("d",strtotime($_COOKIE['bday']));
+                                                       $monthWord = date("F",strtotime($this->type));
+                                                       $day =  date("d",strtotime($this->type));
                                                        
                                                        //Leo
                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
@@ -288,13 +303,13 @@ if (isset($_POST['send'])){
                                                }
                                             }
 
-                                            class Relationships extends Zodiac{
+                                            class Relationships extends Information{
 
-                                                function getInformation() {
+                                                function display() {
                                                     if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
                                                     {
-                                                       $monthWord = date("F",strtotime($_COOKIE['bday']));
-                                                       $day =  date("d",strtotime($_COOKIE['bday']));
+                                                       $monthWord = date("F",strtotime($this->type));
+                                                       $day =  date("d",strtotime($this->type));
                                                        
                                                        //Leo
                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
@@ -334,10 +349,16 @@ if (isset($_POST['send'])){
                                                }
                                             }
 
+                                            if (isset($_COOKIE['bday'])){
+                                                $cookiebday = $_COOKIE['bday'];
+                                            } else {
+                                                $cookiebday = ' ';
+                                            }
+                                           
                                             $zodiacObject = new Zodiac();
                                             $personalityObject = new Personality();
-                                            $elementObject = new Elements();
-                                            $relationshipObject = new Relationships();
+                                            $elementObject = new Elements($cookiebday);
+                                            $relationshipObject = new Relationships($cookiebday);
                                             
 
                                         ?>
@@ -363,7 +384,7 @@ if (isset($_POST['send'])){
                                     <div class="text-center">
                                         <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
                                         <a href="element.php" style="color: #000000 ;" ><h3 class="font-alt">Element</h3></a>
-                                        <p class="text-muted mb-0"><?php echo $elementObject -> getInformation(); ?></p>
+                                        <p class="text-muted mb-0"><?php echo $elementObject -> display(); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -371,7 +392,7 @@ if (isset($_POST['send'])){
                                     <div class="text-center">
                                         <i class="bi-bookmark-heart-fill icon-feature text-gradient d-block mb-3"></i>
                                         <a href="relationship.php" style="color: #000000 ;" ><h3 class="font-alt">Relationship</h3></a>
-                                        <p class="text-muted mb-0"><?php echo $relationshipObject -> getInformation(); ?></p>
+                                        <p class="text-muted mb-0"><?php echo $relationshipObject -> display(); ?></p>
                                     </div>
                                 </div>
                             </div>
