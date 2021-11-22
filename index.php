@@ -250,15 +250,15 @@ if (isset($_POST['send'])){
                                                        
                                                        //Leo
                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
-                                                           echo "Leos are known to be born as natural leaders who are creative and eager to conquer everything.";
+                                                           echo "Leo's have the powerful and active fire element in their nature";        
                                                        }
                                                        //Aquarius
                                                        else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
-                                                            echo "Aquarius are known to be incredibly innovative, self-reliant and clever in everything that they do.";
+                                                            echo "Aquarius' have this breathable minds representing the air element";
                                                         }
                                                        //Virgo
                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
-                                                            echo "Virgos are known to be humble, practical and sympathetic person that you will meet in the world.";
+                                                            echo "Virgo's have the life giver and ever loving presence of the earth element";
                                                         } 
                                                        
                                                        /*
@@ -271,14 +271,14 @@ if (isset($_POST['send'])){
 
 
                                                        else {
-                                                           echo  "Unleash the inner you! Know more about yourself through the constellations.";
+                                                           echo "Among the four astrological elements associated with the Zodiac signs, which one are you?";
                                                        }
                                                       
                                                       
                                                      
                                                    } else {
                                                        
-                                                        echo  "Unleash the inner you! Know more about yourself through the constellations.";
+                                                    echo "Among the four astrological elements associated with the Zodiac signs, which one are you?";
                                                        
                                                    }
                                                  
