@@ -1,3 +1,17 @@
+<?php
+// User Input
+if (isset($_POST['send'])){
+
+    $fname = $_POST["fullName"];
+    $bday = $_POST["birthday"];
+
+    setcookie('fname', $fname, time()+1800);
+    setcookie('bday', $bday, time()+1800);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -43,22 +57,21 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         
-                        <!-- Mashead text and app badges-->
+                        <!-- BANNER-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start" >
                             
                             <h1 class="text-white display-1 lh-1 mb-3">Welcome to Zodiac Maniac!</h1>
-                            <p class="text-white lead fw-normal text-white-50 mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+                            <p class="text-white lead fw-normal text-white-50 mb-5">It's time! the constellations are here to tell your brightest destiny, know your fate in just one click</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <form action="/action_page.php">
-                                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" style="background-color: violet;"><br><br>
-                                    <input type="date" id="birthday" name="birthday"><br><br>
-                                    <input type="submit" value="Send to the stars"><br><br>
-                                  </form>
+                                <form method="post" action="index.php">
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" style="background-color: violet;" required><br><br>
+                                    <input type="date" id="birthday" name="birthday" required><br><br>
+                                    <input type="submit" name="send" value="  Send to the stars 🌠" ><br><br>
+                                </form>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
                             <img src="assets/img/zodiacSigns2.png" alt="..." style="max-width: 100%; height: 100%" />
 
@@ -68,13 +81,33 @@
             </div>
        
         </header>
-        <!-- Quote/testimonial aside-->
+        <!-- NAME + BDAY-->
         <aside class="text-center bg-gradient-primary-to-secondary">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">Hey, Patricia Anne! <br> Born 18th of August, in the year 2000. 21 years old</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
+                        <div class="h2 fs-1 text-white mb-4">
+                            
+                            <?php 
+                            
+                            $guestInfo = 'Hey, guest! The stars are re-aligning at your favor, please try again..';
+
+                            if (!isset($_COOKIE['fname']) && isset($_COOKIE['bday'])) { 
+
+                                echo $guestInfo . '<br>'; 
+
+
+                            } else {
+
+                                echo 'Hey, ' . $_COOKIE['fname'] .  '! ' . '<br>';
+                                echo date('F d Y', strtotime($_COOKIE['bday'])) . '<br>';
+                                
+                            }
+                                
+                            ?>
+                           
+                        </div>
+                        <!-- <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" /> -->
                     </div>
                 </div>
             </div>
@@ -91,7 +124,7 @@
                                     <div class="text-center">
                                         <i class="bi-moon-stars-fill icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Zodiac Sign</h3>
-                                        <p class="text-muted mb-0"> About Ready no Photoshop required!</p>
+                                        <p class="text-muted mb-0"> Sample Zodiac Sign here</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
@@ -108,8 +141,8 @@
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Characteristics</h3>
-                                        <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
+                                        <h3 class="font-alt">Element</h3>
+                                        <p class="text-muted mb-0">Sample Zodiac Element here</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -117,7 +150,7 @@
                                     <div class="text-center">
                                         <i class="bi-bookmark-heart-fill icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Relationships</h3>
-                                        <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
+                                        <p class="text-muted mb-0">Sample relationship compatibility here</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,9 +175,7 @@
                                 <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
                                         <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
+                                    
                                         <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-screen.mp4" type="video/mp4" /></video>
                                     </div>
                                 </div>
@@ -160,7 +191,7 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Ruling Planet</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is for the ruling planet details in the website.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="assets/img/sun.png" alt="..." /></div>
@@ -211,16 +242,12 @@
                 </div>
             </div>
         </footer>
-        <!-- Feedback Modal-->
+   
         
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
