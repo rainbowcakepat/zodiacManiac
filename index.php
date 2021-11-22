@@ -7,6 +7,7 @@ if (isset($_POST['send'])){
 
     setcookie('fname', $fname, time()+1800);
     setcookie('bday', $bday, time()+1800);
+    header('Location: index.php');
 }
 
 ?>
@@ -90,18 +91,32 @@ if (isset($_POST['send'])){
                             
                             <?php 
                             
-                            $guestInfo = 'Hey, guest! The stars are re-aligning at your favor, please try again..';
+                            $guestInfo = 'Hey, guest! The stars are re-aligning at your favor, discover your fate ';
 
-                            if (!isset($_COOKIE['fname']) && isset($_COOKIE['bday'])) { 
+                            if (!isset($_COOKIE['fname']) && !isset($_COOKIE['bday'])) { 
 
                                 echo $guestInfo . '<br>'; 
 
 
                             } else {
+                        
+                                function calcutateAge($dateOfBirth){
 
-                                echo 'Hey, ' . $_COOKIE['fname'] .  '! ' . '<br>';
-                                echo date('F d Y', strtotime($_COOKIE['bday'])) . '<br>';
+                                    $dateOfBirth = date("Y-m-d",strtotime($_COOKIE['bday']));
+                            
+                                    $dateOfBirthObj = new DateTime($dateOfBirth);
+                                    $dateNowObject = new DateTime();
+                            
+                                    $difference = $dateOfBirthObj->diff($dateNowObject);
+                            
+                                    return $difference->y;
+                            
+                             }
                                 
+                                echo 'Hey, ' . $_COOKIE['fname'] .  '! ' . '<br>';
+                                echo 'You are currently, ' . calcutateAge($_COOKIE['bday']) . ' years old';
+                                echo ' and your birthday is on ' . date('F d Y', strtotime($_COOKIE['bday'])) . '<br>';
+
                             }
                                 
                             ?>
@@ -124,7 +139,71 @@ if (isset($_POST['send'])){
                                     <div class="text-center">
                                         <i class="bi-moon-stars-fill icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Zodiac Sign</h3>
-                                        <p class="text-muted mb-0"> Sample Zodiac Sign here</p>
+
+                                        <?php
+
+                                            class Zodiac {
+
+
+                                                function getInformation() {
+                                                    
+                                                    if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
+                                                     {
+                                                        $monthWord = date("F",strtotime($_COOKIE['bday']));
+                                                        $day =  date("d",strtotime($_COOKIE['bday']));
+                                                        
+                                                        //Leo
+                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                            echo 'Leo';
+                                                        }
+                                                        //Aquarius
+                                                        else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                                            echo 'Aquarius';
+                                                        }
+                                                        //Virgo
+                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                                            echo 'Virgo';
+                                                        } else {
+                                                            echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                        }
+                                                       
+                                                       
+                                                      
+                                                    } else {
+                                                        
+                                                        echo  "Zodiac signs are known as constellations which originated from the greek term zōdiakos kyklos which means “circle of animals”.";
+                                                        
+                                                    }
+                                                  
+
+                                
+                                                 
+
+                                                    
+                                                }
+                                            }
+
+                                            class Personality extends Zodiac{
+
+                                                function getInformation() {
+                                                    echo "This is the Personality class";
+                                                }
+                                            }
+
+                                            $zodiacObject = new Zodiac();
+                            
+
+                                            
+                                            
+
+                                        
+                                        
+                                        ?>
+                                
+                                    <p class="text-muted mb-0"><?php echo $zodiacObject -> getInformation(); ?></p>
+
+                                        
+
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
