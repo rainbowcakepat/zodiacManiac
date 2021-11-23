@@ -94,7 +94,7 @@ if (isset($_POST['send'])){
                             
                             <?php 
                             
-                            $guestInfo = 'Hey, guest! The stars are re-aligning at your favor, discover your fate ';
+                            $guestInfo = "Hey, guest! The stars are re-aligning at your favor, discover what the vastness of the universe tells to your future!";
 
                             if (!isset($_COOKIE['fname']) && !isset($_COOKIE['bday'])) { 
 
@@ -289,14 +289,14 @@ if (isset($_POST['send'])){
 
 
                                                        else {
-                                                           echo "Among the four astrological elements associated with the Zodiac signs, which one are you?";
+                                                           echo "Among the four astrological elements associated with the Zodiac signs, are you from the Fire, Air, Water or Earth element?";
                                                        }
                                                       
                                                       
                                                      
                                                    } else {
                                                        
-                                                    echo "Among the four astrological elements associated with the Zodiac signs, which one are you?";
+                                                    echo "Among the four astrological elements associated with the Zodiac signs, are you from the Fire, Air, Water or Earth element?";
                                                        
                                                    }
                                                  
@@ -356,7 +356,7 @@ if (isset($_POST['send'])){
 
                                                 function display() {
                                                     global $images; 
-                                                    
+
                                                     if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
                                                     {
                                                        $monthWord = date("F",strtotime($this->type));

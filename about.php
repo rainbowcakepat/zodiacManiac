@@ -58,7 +58,7 @@ echo "about";
                             <h1 class="text-white display-1 lh-1 mb-3">Gurlalu Productions</h1>
                             <p class="text-white lead fw-normal text-white-50 mb-4">We are the second group from section 4-ITG, <br> presenting our Project for IT-ELEC3C</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <p class="text-white lead fw-normal">The Gurlalu team is comprised of four members namely Franchesca Dionson, Jaira Ong, Dwayne Loseñada and Patricia Valenzuela. They made a project called Zodiac Maniac, allowing the user to know more about their Astrological Signs</p>
+                            <p class="text-white lead fw-normal">The Gurlalu team is comprised of four members namely Franchesca Dionson, Jaira Ong, Dwayne Loseñada and Patricia Valenzuela. They made a project called Zodiac Maniac, allowing the user to know more about their Astrological Signs. </p>
                             <br>
                             </div>
                             <form action="index.php">
