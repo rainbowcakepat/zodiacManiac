@@ -159,6 +159,7 @@ if (isset($_POST['send'])){
                                                         
                                                         //Leo
                                                         if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                            
                                                             echo 'Leo is the fifth Zodiac Sign covering the period from the 23rd of July to 22nd of August.';
                                                         }
                                                         //Aquarius
@@ -352,7 +353,10 @@ if (isset($_POST['send'])){
                                             
                                             class RulingPlanet extends Information{
 
+
                                                 function display() {
+                                                    global $images; 
+                                                    
                                                     if (isset($_COOKIE['fname']) && isset($_COOKIE['bday']))
                                                     {
                                                        $monthWord = date("F",strtotime($this->type));
@@ -360,14 +364,17 @@ if (isset($_POST['send'])){
                                                        
                                                        //Leo
                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                        $images = "assets/img/sun.png";
                                                         echo "The Zodiac Sign Leo is ruled by the Sun which signifies royalty, warmth and energy. As the sun is center of the solar system, Leos also loves to be the center of attention and is expressive in their creativity and self-confidence.";    
                                                     }
                                                        //Aquarius
                                                        else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                                        $images = "assets/img/uranus.png";
                                                         echo "The Zodiac Sign Aquarius is ruled by the planet Uranus which signifies a person being uncommon or strange to many because they are highly unique and talented. Aguarius people are truly clever that they love being challenged and futuristic.";
                                                        }
                                                         //Virgo
                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                                        $images = "assets/img/mercury.png";
                                                         echo "The Zodiac Sign Virgo is ruled by the planet Mercury which is near to the Sun signifying that they are highly-observant people. Virgos loved to usually keep things as organize as possible, showing their keen and analytical side.";
                                                     } 
                                                        
@@ -381,13 +388,14 @@ if (isset($_POST['send'])){
 
 
                                                        else {
+                                                        $images = "assets/img/planet.png";
                                                         echo "The Ruling Planet of the different Zodiac Signs symbolizes the kind of personality, energy and drive that a person expresses. Planets greatly influence how you act based on your cosmic characteristics.";
                                                        }
                                                       
                                                       
                                                      
                                                    } else {
-                                                       
+                                                    $images = "assets/img/planet.png";
                                                    echo "The Ruling Planet of the different Zodiac Signs symbolizes the kind of personality, energy and drive that a person expresses. Planets greatly influence how you act based on your cosmic characteristics.";
                                                        
                                                    }
@@ -477,14 +485,17 @@ if (isset($_POST['send'])){
         </section>
         <!-- Basic features section-->
         <section class="bg-light">
+
             <div class="container px-5">
+                
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Ruling Planet</h2>
+                        
+                        <h2 class="display-4 lh-1 mb-4">The Ruling Planet</h2>
                         <p class="text-muted mb-0"><?php echo $rulingPlanetObject -> display(); ?></p>
                     </div>
                     <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="assets/img/sun.png" alt="..." /></div>
+                        <div class="px-5 px-sm-8"><img class="img-fluid rounded-circle" src= "<?php echo $images ?>" alt="..." /></div>
                     </div>
                 </div>
             </div>
