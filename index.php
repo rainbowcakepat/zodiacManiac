@@ -532,7 +532,7 @@ if (isset($_POST['send'])){
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
                 <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Gurlalu Productions 2021. All Rights Reserved.</div>
+                    <div class="mb-2">&copy; Gurlalu Productions 2021</div>
                    Dionson
                     <span class="mx-1">&middot;</span>
                    Loseñada
@@ -541,6 +541,23 @@ if (isset($_POST['send'])){
                     <span class="mx-1">&middot;</span>
                    Valenzuela
                 </div>
+            </div>
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                   Sources
+                    <span class="mx-1">&middot;</span>
+                   Britannica.com
+                    <span class="mx-1">&middot;</span>
+                   Shapes.com
+                    <span class="mx-1">&middot;</span>
+                   Thoughtco.com
+                   <span class="mx-1">&middot;</span>
+                   Space.com
+                   <span class="mx-1">&middot;</span>
+                   Indiatimes.com
+                   <span class="mx-1">&middot;</span>
+                   
+        
             </div>
         </footer>
    
