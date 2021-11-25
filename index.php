@@ -314,7 +314,7 @@ if (isset($_POST['send'])){
                                                        
                                                        //Leo
                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
-                                                        echo "The most compatible signs with a Leo are Aries, Sagittarius, Gemini and Libra";
+                                                        echo "The most compatible signs with a Leo are Aries, Scorpio and Aquarius";
                                                         }
                                                        //Aquarius
                                                        else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
