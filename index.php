@@ -550,6 +550,8 @@ if (isset($_POST['send'])){
                     <span class="mx-1">&middot;</span>
                    Shapes.com
                     <span class="mx-1">&middot;</span>
+                    Allure.com
+                    <span class="mx-1">&middot;</span>
                    Thoughtco.com
                    <span class="mx-1">&middot;</span>
                    Space.com
