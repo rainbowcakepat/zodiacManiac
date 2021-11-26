@@ -554,6 +554,8 @@ if (isset($_POST['send'])){
                    <span class="mx-1">&middot;</span>
                    Space.com
                    <span class="mx-1">&middot;</span>
+                   Tarot.com
+                   <span class="mx-1">&middot;</span>
                    Indiatimes.com
                    <span class="mx-1">&middot;</span>
                    
