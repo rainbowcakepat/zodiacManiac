@@ -381,6 +381,7 @@ if (isset($_POST['send'])){
                                                        /*
                                                        
                                                        Dagdagan niyo dito
+                                                       gayahin niyo na lang yung pagpapalit ng picture kemerut 
 
 
                                                        */
@@ -524,7 +525,16 @@ if (isset($_POST['send'])){
                         Horoscope
                     </h2>
                     <p class="btn-outline-light py-3 px-4">Hello horoscope ito</p>
+                    <!--
+                        
+                        Kopyahin mo na lang mami dito yung mga codes tapos eto ung api na gagamitin: https://rapidapi.com/sameer.kumar/api/aztro/
+                       Instructions: https://rapidapi.com/blog/how-to-use-an-api-with-php/
+
+                     -->
+
                     <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a> -->
+                
+                
                 </div>
             </div>
         </section>
