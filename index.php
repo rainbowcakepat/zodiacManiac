@@ -524,16 +524,48 @@ if (isset($_POST['send'])){
                         <br />
                         Horoscope
                     </h2>
-                    <p class="btn-outline-light py-3 px-4">Hello horoscope ito</p>
+                   
                     <!--
                         
-                        Kopyahin mo na lang mami dito yung mga codes tapos eto ung api na gagamitin: https://rapidapi.com/sameer.kumar/api/aztro/
-                       Instructions: https://rapidapi.com/blog/how-to-use-an-api-with-php/
+                Pachange na lang ng mga sign sign (if-else) tapos kuhanin lang yung header na description (check docs)
 
                      -->
 
                     <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a> -->
-                
+                    
+                    <?php
+                        global $response;
+                        global $sign; 
+
+                        $curl = curl_init();
+
+                        curl_setopt_array($curl, [
+                            CURLOPT_URL => "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today",
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_FOLLOWLOCATION => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_HTTPHEADER => [
+                                "x-rapidapi-host: sameer-kumar-aztro-v1.p.rapidapi.com",
+                                "x-rapidapi-key: d6e39442d6msh6c1320ff4c6cd7dp1bbbc8jsn476920cee23e"
+                            ],
+                        ]);
+
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+
+                        curl_close($curl);
+
+                        if ($err) {
+                            $response = $err;
+                        } else {
+                            $response;
+                        }
+                ?>
+                 <p class="btn-outline-light py-3 px-4"><?php echo $response?></p>
                 
                 </div>
             </div>
