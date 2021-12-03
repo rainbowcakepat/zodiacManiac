@@ -171,6 +171,18 @@ if (isset($_POST['send'])){
                                                             echo "
                                                             Virgo is the sixth Zodiac Sign covering the period from the 23rd of August to 22nd of September.";
                                                         } 
+                                                        //Taurus
+                                                        else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
+                                                            echo "Taurus is the second sign of the zodiac, considered as governing that portion of the year from about April 20 to about May 20.";
+                                                        }
+                                                        //Gemini
+                                                        else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
+                                                            echo "Gemini is the third sign of the zodiac, considered as governing the period from about May 21 to about June 21.";
+                                                        }
+                                                        //Libra
+                                                        else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
+                                                            echo "Libra is the seventh sign of the zodiac, considered as governing the period from about September 22 to about October 23. ";
+                                                        }
                                                         
                                                         /*
                                                         
@@ -216,6 +228,18 @@ if (isset($_POST['send'])){
                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
                                                             echo "Virgos are known to be humble, practical and sympathetic person that you will meet in the world.";
                                                         } 
+                                                        //Taurus
+                                                        else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
+                                                            echo "Tauruses are known to be intelligent, dependable, hardworking, dedicated, and stubborn.";
+                                                        }
+                                                        //Gemini
+                                                        else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
+                                                            echo "Geminis are known to be volatile beings that are inquisitive, intelligent, and great thinkers.";
+                                                        }
+                                                        //Libra
+                                                        else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
+                                                            echo "Libras are known to be recognized for their charm, beauty, and well-balanced personalities.";
+                                                        }
                                                        
                                                        /*
                                                        
@@ -277,7 +301,20 @@ if (isset($_POST['send'])){
                                                        //Virgo
                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
                                                             echo "Virgo's have the life giver and ever loving presence of the earth element";
-                                                        } 
+                                                        }
+                                                        //Taurus
+                                                        else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
+                                                            echo "Taurus' nature is to be stable, grounded, and practical based on its earth element.";
+                                                        }
+                                                        //Gemini
+                                                        else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
+                                                            echo "Geminis tend to live in their heads, being logical and scientific because this is the nature of air element people.";
+                                                        }
+                                                        //Libra
+                                                        else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
+                                                            echo "Libras' have this harmony-seeking social butterflies trait whose hearts are drawn to art, music, dance, and connecting with others.";
+                                                        }
+                                                         
                                                        
                                                        /*
                                                        
@@ -324,6 +361,18 @@ if (isset($_POST['send'])){
                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
                                                             echo "The most compatible signs with a Virgo are Taurus, Capricorn and fellow Virgo.";
                                                         } 
+                                                        //Taurus
+                                                        else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
+                                                            echo "The most compatible signs with a Taurus are Scorpio, Virgo, and Capricorn.";
+                                                        }
+                                                        //Gemini
+                                                        else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
+                                                            echo "The most compatible signs with a Gemini are Aquarius, and Libra.";
+                                                        }
+                                                        //Libra
+                                                        else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
+                                                            echo "The most compatible signs with a Libra are Gemini and Aquarius.";
+                                                        }
                                                        
                                                        /*
                                                        
@@ -377,7 +426,21 @@ if (isset($_POST['send'])){
                                                         $images = "assets/img/mercury.png";
                                                         echo "The Zodiac Sign Virgo is ruled by the planet Mercury which is near to the Sun signifying that they are highly-observant people. Virgos loved to usually keep things as organize as possible, showing their keen and analytical side.";
                                                     } 
-                                                       
+                                                       //Taurus
+                                                        else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
+                                                            $images = "assets/img/venus.png";
+                                                            echo "The Zodiac Sign Taurus is ruled by the planet Venus which is the planet of love, beauty and profit, she aids Taurus in being earthy and lucky in money and love.";
+                                                        }
+                                                        //Gemini
+                                                        else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
+                                                            $images = "assets/img/mercury.png";
+                                                            echo "The Zodiac Sign Gemini is ruled by the planet Mercury which brings Geminis their ability to open their minds and absorb and process information more quickly than any other zodiac sign..";
+                                                        }
+                                                        //Libra
+                                                        else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
+                                                            $images = "assets/img/venus.png";
+                                                            echo "The Zodiac Sign Libra is ruled by the planet Venus which is the planet of love, harmony, and relationships.";
+                                                    }
                                                        /*
                                                        
                                                        Dagdagan niyo dito
