@@ -158,7 +158,7 @@ if (isset($_POST['send'])){
                                                         $day =  date("d",strtotime($_COOKIE['bday']));
                                                         
                                                         //Leo
-                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                        if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                                                             
                                                             echo 'Leo is the fifth Zodiac Sign covering the period from the 23rd of July to 22nd of August.';
                                                         }
@@ -183,7 +183,22 @@ if (isset($_POST['send'])){
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                                                             echo "Libra is the seventh sign of the zodiac, considered as governing the period from about September 22 to about October 23. ";
                                                         }
-                                                        
+
+                                                        //Cancer
+                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
+                                                            echo "Cancer is the fourth sign of the zodiac, considered as governing the period from about June 22 to about July 22. ";
+                                                        }
+
+                                                        //Pisces
+                                                        else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
+                                                            echo "Pisces is the 12th sign of the zodiac, considered as governing the period from about February 19 to about March 20. ";
+                                                        }
+
+                                                        //Aries
+                                                        else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
+                                                            echo "Aries is the first sign of the zodiac, considered as governing the period from about March 21 to about April 19. ";
+                                                        }
+
                                                         /*
                                                         
                                                         Dagdagan niyo dito
@@ -239,6 +254,21 @@ if (isset($_POST['send'])){
                                                         //Libra
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                                                             echo "Libras are known to be recognized for their charm, beauty, and well-balanced personalities.";
+                                                        }
+
+                                                        //Cancer
+                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
+                                                            echo "On the outside, cancers may seem cold or distant. However with time they tend to reveal their true nature, which is gentle, compassionate, and highly intuitive.";
+                                                        }
+
+                                                        //Pisces
+                                                        else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
+                                                            echo "Pisces are known for being very emotionally aware, as well as being creative and having a colorful imagination.";
+                                                        }
+
+                                                        //Aries
+                                                        else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
+                                                            echo "Aries are known to be adventurous, bold, and quick to initiate action with their high energy.";
                                                         }
                                                        
                                                        /*
@@ -314,6 +344,21 @@ if (isset($_POST['send'])){
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                                                             echo "Libras' have this harmony-seeking social butterflies trait whose hearts are drawn to art, music, dance, and connecting with others.";
                                                         }
+
+                                                        //Cancer
+                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
+                                                            echo "Cancers hold the feminine or yin energy of emotion thanks to their element of Water.";
+                                                        }
+
+                                                        //Pisces
+                                                        else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
+                                                            echo "A Pisces' Water element allow them to be tuned in to a deeper and subtler reality than others around them.";
+                                                        }
+
+                                                        //Aries
+                                                        else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
+                                                            echo "Much like their representative element of Fire, Aries have a radiant form of energy that brings light to the world around them.";
+                                                        }
                                                          
                                                        
                                                        /*
@@ -372,6 +417,21 @@ if (isset($_POST['send'])){
                                                         //Libra
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                                                             echo "The most compatible signs with a Libra are Gemini and Aquarius.";
+                                                        }
+
+                                                        //Cancer
+                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
+                                                            echo "The most compatible signs with a Cancer are its fellow water signs, Pisces and Scorpio.";
+                                                        }
+
+                                                        //Pisces
+                                                        else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
+                                                            echo "The signs most compatible with Pisces are fellow water signs Cancer and Scorpio, as well as earth signs Taurus and Capricorn.";
+                                                        }
+
+                                                        //Aries
+                                                        else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
+                                                            echo "The signs most compatible with Aries are fellow fire signs Leo and Sagittarius, as well as air signs Gemini and Aquarius.";
                                                         }
                                                        
                                                        /*
@@ -441,6 +501,23 @@ if (isset($_POST['send'])){
                                                             $images = "assets/img/venus.png";
                                                             echo "The Zodiac Sign Libra is ruled by the planet Venus which is the planet of love, harmony, and relationships.";
                                                     }
+                                                        //Cancer
+                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
+                                                        $images = "assets/img/moon.png";
+                                                        echo "The Zodiac Sign Cancer is ruled by the Moon, which is responsible for the ebbs and flows of human emotion. Their moods may change quickly but they are always sure of what they are.";    
+                                                    }
+                                                        //Pisces
+                                                        else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
+                                                        $images = "assets/img/neptune.png";
+                                                        echo "The Zodiac Sign Pisces is ruled by the planet Neptune, which represents dreams, the imagination, and all things spiritual.";    
+                                                    }
+                                                        //Aries
+                                                        else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
+                                                        $images = "assets/img/mars.png";
+                                                        echo "The Zodiac Sign Aries is ruled by the planet Mars, the planet of action. Mars is all about energy, passion, and self-starting, leaving Aries with an inherent, undeniable confidence.";    
+                                                    }
+
+                                                    
                                                        /*
                                                        
                                                        Dagdagan niyo dito
