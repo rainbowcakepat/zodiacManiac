@@ -112,7 +112,7 @@ if($conn -> connect_error){
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Relathionships</a>
+                <a class="navbar-brand fw-bold" href="#page-top">Relationships</a>
                
               
                 </div>
@@ -141,9 +141,9 @@ if($conn -> connect_error){
                 <source src="assets/img/galaxy.mp4" type="video/mp4">
               </video>
                             <h1 class="text-white display-1 lh-1 mb-3">Want to know about your Relationships?</h1>
-                            <p class="text-white lead fw-normal text-white-50 mb-4">We are the second group from section 4-ITG, <br> presenting our Project for IT-ELEC3C</p>
+                            <!-- <p class="text-white lead fw-normal text-white-50 mb-4">We are the second group from section 4-ITG, <br> presenting our Project for IT-ELEC3C</p> -->
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <p class="text-muted mb-0"><?php echo $displayRelationship ?></p>
+                            <p class="text-white lead fw-normal text-white-50 mb-4"><?php echo $displayRelationship ?></p>
                             <br>
                             </div>
                             <form action="index.php">
@@ -156,7 +156,7 @@ if($conn -> connect_error){
                     </div>
                     <div class="col-lg-6">
                         <div class="masthead-device-mockup">
-                            <img src="assets/img/groupmates.png" alt="..." style="max-width: 100%; height: 100%" />
+                            <img src="assets/img/couple.webp" alt="..." style="max-width: 100%; height: 100%" />
 
                         </div>
                     </div>

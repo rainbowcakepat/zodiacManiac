@@ -141,7 +141,6 @@ if($conn -> connect_error){
                 <source src="assets/img/galaxy.mp4" type="video/mp4">
               </video>
                             <h1 class="text-white display-1 lh-1 mb-3">What's your Personality Like?</h1>
-                            <p class="text-white lead fw-normal text-white-50 mb-4">We are the second group from section 4-ITG, <br> presenting our Project for IT-ELEC3C</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                             <!-- <p class="text-muted mb-0"><?php echo $displayPersonality ?></p> -->
                             <p class="text-white lead fw-normal"><?php echo $displayPersonality ?></p>
@@ -158,7 +157,7 @@ if($conn -> connect_error){
                     </div>
                     <div class="col-lg-6">
                         <div class="masthead-device-mockup">
-                            <img src="assets/img/groupmates.png" alt="..." style="max-width: 100%; height: 100%" />
+                            <img src="assets/img/mask.png" alt="..." style="max-width: 100%; height: 100%" />
 
                         </div>
                     </div>
