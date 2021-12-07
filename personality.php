@@ -143,7 +143,9 @@ if($conn -> connect_error){
                             <h1 class="text-white display-1 lh-1 mb-3">What's your Personality Like?</h1>
                             <p class="text-white lead fw-normal text-white-50 mb-4">We are the second group from section 4-ITG, <br> presenting our Project for IT-ELEC3C</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <p class="text-muted mb-0"><?php echo $displayPersonality ?></p>
+                            <!-- <p class="text-muted mb-0"><?php echo $displayPersonality ?></p> -->
+                            <p class="text-white lead fw-normal"><?php echo $displayPersonality ?></p>
+                           
                             <br>
                             </div>
                             <form action="index.php">
