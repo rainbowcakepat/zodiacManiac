@@ -219,6 +219,24 @@ if (isset($_POST['send'])){
                                                             echo "Aries is the first sign of the zodiac, considered as governing the period from about March 21 to about April 19. ";
                                                         }
 
+                                                        //Scorpio
+                                                        else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
+                                                            echo "Scorpio is the eighth sign of the zodiac, considered as governing the period from about October 24 to about November 21.";
+                                                        }
+
+                                                        //Sagittarius
+                                                        else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
+                                                            echo "Sagittarius is the ninth sign of the zodiac, considered as governing the period from about November 22 to about December 21.";
+                                                        }
+
+                                                        //Capricorn
+                                                        else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
+                                                            echo "Capricorn is the 10th sign of the zodiac, considered as governing the period from about December 22 to about January 19.";
+                                                        }
+
+
+                                                        
+
                                                         /*
                                                         
                                                         Dagdagan niyo dito
@@ -289,6 +307,21 @@ if (isset($_POST['send'])){
                                                         //Aries
                                                         else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
                                                             echo "Aries are known to be adventurous, bold, and quick to initiate action with their high energy.";
+                                                        }
+
+                                                         //Scorpio
+                                                         else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
+                                                            echo "Scorpio is one of the most misunderstood signs of the zodiac. Because of its incredible passion and power, Scorpio is often mistaken for a fire sign.";
+                                                        }
+
+                                                        //Sagittarius
+                                                        else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
+                                                            echo "Sagittarius is a mutable sign, meaning it is associated with adaptability and flexibility. This perfectly reflects the archers' deep-rooted desire for change.";
+                                                        }
+
+                                                        //Capricorn
+                                                        else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
+                                                            echo "Capricorns tap into their inner fortitude to overcome whatever stands between them and their long-term goals and they don’t let anything distract them from getting ahead.";
                                                         }
                                                        
                                                        /*
@@ -380,6 +413,20 @@ if (isset($_POST['send'])){
                                                             echo "Much like their representative element of Fire, Aries have a radiant form of energy that brings light to the world around them.";
                                                         }
                                                          
+                                                        //Scorpio
+                                                         else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
+                                                            echo "Scorpio is a water element, just like Cancer and Pisces. Water signs are nurturing, intuitive, and sensitive.";
+                                                        }
+
+                                                        //Sagittarius
+                                                        else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
+                                                            echo "The final fire sign of the zodiac, Sagittarius traits are unlike any other sign of the zodiac; they're totally unique to this brazen spirit.";
+                                                        }
+
+                                                        //Capricorn
+                                                        else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
+                                                            echo "The last earth sign of the zodiac, Capricorn is represented by the sea goat, a mythological creature with the body of a goat and tail of a fish.";
+                                                        }
                                                        
                                                        /*
                                                        
@@ -452,6 +499,21 @@ if (isset($_POST['send'])){
                                                         //Aries
                                                         else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
                                                             echo "The signs most compatible with Aries are fellow fire signs Leo and Sagittarius, as well as air signs Gemini and Aquarius.";
+                                                        }
+
+                                                        //Scorpio
+                                                        else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
+                                                            echo "The most compatible signs for Scorpio friendships and romantic relationships are fellow water signs Cancer, other Scorpios, and Pisces, and earth signs Virgo, Taurus, and Capricorn.";
+                                                        }
+
+                                                        //Sagittarius
+                                                        else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
+                                                            echo "The signs most compatible with Sagittarius are fellow fire signs Aries and Leo, and air signs Libra and Aquarius.";
+                                                        }
+
+                                                        //Capricorn
+                                                        else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
+                                                            echo "The signs most compatible with Capricorn are fellow earth signs Taurus and Virgo, and water signs Scorpio and Pisces. ";
                                                         }
                                                        
                                                        /*
