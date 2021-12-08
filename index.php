@@ -283,7 +283,7 @@ if (isset($_POST['send'])){
 
                                                         //Cancer
                                                         else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
-                                                            echo "On the outside, cancers may seem cold or distant. However with time they tend to reveal their true nature, which is gentle, compassionate, and highly intuitive.";
+                                                            echo "On the outside, cancers may seem cold or distant. With time, they tend to reveal their true nature, which is gentle, compassionate, and highly intuitive.";
                                                         }
 
                                                         //Pisces
@@ -298,7 +298,7 @@ if (isset($_POST['send'])){
 
                                                          //Scorpio
                                                          else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
-                                                            echo "Scorpio is one of the most misunderstood signs of the zodiac. Because of its incredible passion and power, Scorpio is often mistaken for a fire sign.";
+                                                            echo "Scorpio is one of the most misunderstood signs of the zodiac because of its incredible passion and power.";
                                                         }
 
                                                         //Sagittarius
