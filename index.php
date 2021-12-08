@@ -192,45 +192,45 @@ if (isset($_POST['send'])){
                                                         } 
                                                         //Taurus
                                                         else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
-                                                            echo "Taurus is the second sign of the zodiac, considered as governing that portion of the year from about April 20 to about May 20.";
+                                                            echo "Taurus is the second sign of the zodiac, considered as governing that portion of the year from April 20 to May 20.";
                                                         }
                                                         //Gemini
                                                         else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
-                                                            echo "Gemini is the third sign of the zodiac, considered as governing the period from about May 21 to about June 21.";
+                                                            echo "Gemini is the third sign of the zodiac, considered as governing the period from  May 21 to  June 21.";
                                                         }
                                                         //Libra
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
-                                                            echo "Libra is the seventh sign of the zodiac, considered as governing the period from about September 22 to about October 23. ";
+                                                            echo "Libra is the seventh sign of the zodiac, considered as governing the period from  September 22 to  October 23. ";
                                                         }
 
                                                         //Cancer
                                                         else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
-                                                            echo "Cancer is the fourth sign of the zodiac, considered as governing the period from about June 22 to about July 22. ";
+                                                            echo "Cancer is the fourth sign of the zodiac, considered as governing the period from  June 22 to  July 22. ";
                                                         }
 
                                                         //Pisces
                                                         else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
-                                                            echo "Pisces is the 12th sign of the zodiac, considered as governing the period from about February 19 to about March 20. ";
+                                                            echo "Pisces is the 12th sign of the zodiac, considered as governing the period from  February 19 to  March 20. ";
                                                         }
 
                                                         //Aries
                                                         else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
-                                                            echo "Aries is the first sign of the zodiac, considered as governing the period from about March 21 to about April 19. ";
+                                                            echo "Aries is the first sign of the zodiac, considered as governing the period from  March 21 to  April 19. ";
                                                         }
 
                                                         //Scorpio
                                                         else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
-                                                            echo "Scorpio is the eighth sign of the zodiac, considered as governing the period from about October 24 to about November 21.";
+                                                            echo "Scorpio is the eighth sign of the zodiac, considered as governing the period from  October 24 to  November 21.";
                                                         }
 
                                                         //Sagittarius
                                                         else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
-                                                            echo "Sagittarius is the ninth sign of the zodiac, considered as governing the period from about November 22 to about December 21.";
+                                                            echo "Sagittarius is the ninth sign of the zodiac, considered as governing the period from  November 22 to  December 21.";
                                                         }
 
                                                         //Capricorn
                                                         else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
-                                                            echo "Capricorn is the 10th sign of the zodiac, considered as governing the period from about December 22 to about January 19.";
+                                                            echo "Capricorn is the 10th sign of the zodiac, considered as governing the period from  December 22 to  January 19.";
                                                         }
 
                                                         else {
