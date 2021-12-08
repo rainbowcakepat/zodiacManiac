@@ -296,8 +296,8 @@ if (isset($_POST['send'])){
                                                             echo "Aries are known to be adventurous, bold, and quick to initiate action with their high energy.";
                                                         }
 
-                                                         //Scorpio
-                                                         else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
+                                                        //Scorpio
+                                                        else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
                                                             echo "Scorpio is one of the most misunderstood signs of the zodiac because of its incredible passion and power.";
                                                         }
 
@@ -761,7 +761,7 @@ if (isset($_POST['send'])){
                                 $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aries&day=today";
                             }
                             //Scorpio
-                            else if(($monthWord == "October" && $day >= 24) || ($monthWord == "November" && $day <= 21)){
+                            else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)){
                                 $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=scorpio&day=today";
                             }
                             //Sagittarius
