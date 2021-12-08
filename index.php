@@ -471,22 +471,22 @@ if (isset($_POST['send'])){
                                                        $monthWord = date("F",strtotime($this->type));
                                                        $day =  date("d",strtotime($this->type));
                                                        
-                                                       //Leo
-                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
-                                                        $images = "assets/img/sun.png";
-                                                        echo "The Zodiac Sign Leo is ruled by the Sun which signifies royalty, warmth and energy. As the sun is center of the solar system, Leos also loves to be the center of attention and is expressive in their creativity and self-confidence.";    
-                                                    }
-                                                       //Aquarius
-                                                       else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
-                                                        $images = "assets/img/uranus.png";
-                                                        echo "The Zodiac Sign Aquarius is ruled by the planet Uranus which signifies a person being uncommon or strange to many because they are highly unique and talented. Aguarius people are truly clever that they love being challenged and futuristic.";
-                                                       }
+                                                        //Leo
+                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                            $images = "assets/img/sun.png";
+                                                            echo "The Zodiac Sign Leo is ruled by the Sun which signifies royalty, warmth and energy. As the sun is center of the solar system, Leos also loves to be the center of attention and is expressive in their creativity and self-confidence.";    
+                                                        }
+                                                        //Aquarius
+                                                        else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                                            $images = "assets/img/uranus.png";
+                                                            echo "The Zodiac Sign Aquarius is ruled by the planet Uranus which signifies a person being uncommon or strange to many because they are highly unique and talented. Aguarius people are truly clever that they love being challenged and futuristic.";
+                                                        }
                                                         //Virgo
-                                                       else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
-                                                        $images = "assets/img/mercury.png";
-                                                        echo "The Zodiac Sign Virgo is ruled by the planet Mercury which is near to the Sun signifying that they are highly-observant people. Virgos loved to usually keep things as organize as possible, showing their keen and analytical side.";
-                                                    } 
-                                                       //Taurus
+                                                        else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                                            $images = "assets/img/mercury.png";
+                                                            echo "The Zodiac Sign Virgo is ruled by the planet Mercury which is near to the Sun signifying that they are highly-observant people. Virgos loved to usually keep things as organize as possible, showing their keen and analytical side.";
+                                                        } 
+                                                        //Taurus
                                                         else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
                                                             $images = "assets/img/venus.png";
                                                             echo "The Zodiac Sign Taurus is ruled by the planet Venus which is the planet of love, beauty and profit, she aids Taurus in being earthy and lucky in money and love.";
@@ -499,23 +499,38 @@ if (isset($_POST['send'])){
                                                         //Libra
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                                                             $images = "assets/img/venus.png";
-                                                            echo "The Zodiac Sign Libra is ruled by the planet Venus which is the planet of love, harmony, and relationships.";
-                                                    }
-                                                        //Cancer
-                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
-                                                        $images = "assets/img/moon.png";
-                                                        echo "The Zodiac Sign Cancer is ruled by the Moon, which is responsible for the ebbs and flows of human emotion. Their moods may change quickly but they are always sure of what they are.";    
-                                                    }
+                                                            echo "The Zodiac Sign Libra is ruled by the planet Venus which is the planet of love, harmony, and relationships. Libras are a natural mediator; they appreciate fairness and honesty while working hard to protect those they love. Their relationships mean a lot to them. They take pride in being a good friend and partner and look for those qualities in others.";
+                                                        }
                                                         //Pisces
                                                         else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
-                                                        $images = "assets/img/neptune.png";
-                                                        echo "The Zodiac Sign Pisces is ruled by the planet Neptune, which represents dreams, the imagination, and all things spiritual.";    
-                                                    }
+                                                            $images = "assets/img/neptune.png";
+                                                            echo "The Zodiac Sign Pisces is ruled by the planet Neptune which is the planet of dreams, the imagination and all things spiritual. They’re overflowing with creative energy and reject the hyper-realistic. They prefer to exist in the clouds, floating above the rest of the world as they toe the line between fantasy and reality. It’s existing in this dream-like state that makes them so special.";
+                                                        }
                                                         //Aries
                                                         else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)) {
-                                                        $images = "assets/img/mars.png";
-                                                        echo "The Zodiac Sign Aries is ruled by the planet Mars, the planet of action. Mars is all about energy, passion, and self-starting, leaving Aries with an inherent, undeniable confidence.";    
-                                                    }
+                                                            $images = "assets/img/mars.png";
+                                                            echo "The Zodiac Sign Aries is ruled by the planet Mars which is the planet of energy, passion and self-starting. Aries, as the first sign of the zodiac, they’re the eldest child in this family. They set the pace while the rest of the world plays catch-up. The sheer force of their determination and drive gets them where they need to go, and fast. Simply put, they’re a warrior.";
+                                                        }
+                                                        //Cancer
+                                                        else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {
+                                                            $images = "assets/img/moon.png";
+                                                            echo "The Zodiac Sign Cancer is ruled by the Moon which is the planet responsible for the ebbs and flows of human emotion. They can be more sensitive than the other signs and more in touch with their inner depths. Their moods may change quickly but they’re always sure of what they are. The moon also represents the celestial “mother” figure, influencing Cancers to care deeply about the ties of home and family and develop a penchant for care-taking. ";
+                                                        }
+                                                        //Scorpio
+                                                        else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
+                                                            $images = "assets/img/pluto.png";
+                                                            echo "The Zodiac Sign Scorpio is ruled by the planet Pluto which is the planet of darkness, the subconscious, death and rebirth. Not exactly lighthearted stuff. But they don’t like when things are lighthearted; they crave mystery and intensity. Pluto plays a part in their never-ending fascination with all things hush-hush and underground. This ability to get in touch with their unconscious self makes them one of the most powerful signs in the zodiac.";
+                                                        }
+                                                        //Sagittarius
+                                                        else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
+                                                            $images = "assets/img/jupiter.png";
+                                                            echo "The Zodiac Sign Sagittarius is ruled by the planet Jupiter which is the planet of luck, good fortune and exploration. It’s definitely a mouthful, but luckily they’re always hungry for more. They’re the best adventure buddy anyone could ask for — they want to see and experience it all, and odds are they’ll have fun doing so. They have an inherent energy about them.";
+                                                        }
+                                                        //Capricorn
+                                                        else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
+                                                            $images = "assets/img/saturn.png";
+                                                            echo "The Zodiac Sign Capricorn is ruled by the planet Saturn which is the planet of responsibility, hard work and determination. Capricorns can be very self-critical — they’re hard on themselves when things don’t go according to plan and they always try to learn from their mistakes so they don’t happen again. Saturn’s influence makes Capricorns the ones people always want to have on their team and simultaneously the ones people don’t want to let down";
+                                                        }
 
                                                     
                                                        /*
@@ -674,7 +689,114 @@ if (isset($_POST['send'])){
                     <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a> -->
                     
                     <?php
+
+                        //Serialization
+                        if (isset($_COOKIE['fname']) && isset($_COOKIE['bday'])) {
+
+                            //$ser = serialize(array($response, $response));
+                            //file_put_contents($_COOKIE['fname'] . ".txt", $ser);
+    
+                            $monthWord = date("F",strtotime($_COOKIE['bday']));
+                            $day =  date("d",strtotime($_COOKIE['bday']));
+
                         global $response;
+                        global $sign;
+                        global $z;
+
+                            //Leo
+                            if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=leo&day=today";   
+                            }
+                            //Aquarius
+                            else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today";
+                            }
+                            //Virgo
+                            else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=virgo&day=today"; 
+                            } 
+                            //Taurus
+                            else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=taurus&day=today";
+                            }
+                            //Gemini
+                            else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=gemini&day=today";
+                            }
+                            //Libra
+                            else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=libra&day=today";
+                            }
+                            //Cancer
+                            else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {                                       
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=cancer&day=today";
+                            }
+                            //Pisces
+                            else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)){
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=pisces&day=today";
+                            }
+                            //Aries
+                            else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)){
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aries&day=today";
+                            }
+                            //Scorpio
+                            else if(($monthWord == "October" && $day >= 24) || ($monthWord == "November" && $day <= 21)){
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=scorpio&day=today";
+                            }
+                            //Sagittarius
+                            else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)){
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=sagittarius&day=today";
+                            }
+                            //Capricorn
+                            else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)){
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=capricorn&day=today";
+                            }else {
+                                $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aaaa&day=today";;
+                            }
+
+                        $curl = curl_init();
+
+                        curl_setopt_array($curl, [
+                            CURLOPT_URL => $z,
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_FOLLOWLOCATION => true,
+                            CURLOPT_ENCODING => "",
+                            CURLOPT_MAXREDIRS => 10,
+                            CURLOPT_TIMEOUT => 30,
+                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                            CURLOPT_CUSTOMREQUEST => "POST",
+                            CURLOPT_HTTPHEADER => [
+                                "x-rapidapi-host: sameer-kumar-aztro-v1.p.rapidapi.com",
+                                "x-rapidapi-key: d6e39442d6msh6c1320ff4c6cd7dp1bbbc8jsn476920cee23e"
+                            ],
+                        ]);
+
+                        $response = curl_exec($curl);
+                        $err = curl_error($curl);
+
+                        curl_close($curl);
+
+                        if ($err) {
+                            $response = "hello";
+                        } else {
+                            $data = json_decode($response);
+                            $response = "Horoscope: " . $data->description . "<br>" . "Lucky Color: " . $data->color . "<br>" . "Lucky Time: " . $data->lucky_time . "<br>" . "Lucky Number: " . $data->lucky_number . "<br>" . "Mood: " . $data->mood;
+                        }        
+
+                        }else {
+                            $response = "Find out about your horoscope, lucky color, lucky time, lucky number, and mood today. Just enter your name and birthday then send it to the stars!";
+                            //$response2 = "hi";
+                        }
+
+                ?>
+
+                 <p class="text-white fw-normal text-white-50"><i>Horoscopes are automatically saved in text file</i></p>
+                 <p class="text-white lead fw-normal"><?php echo $response?></p>
+                 <!-- <p class="text-white lead fw-normal"><?php echo $response2?></p> -->
+
+                    
+                    <?php
+                        /*global $response;
                         global $sign; 
 
                         $curl = curl_init();
@@ -703,9 +825,10 @@ if (isset($_POST['send'])){
                             $response = $err;
                         } else {
                             $response;
-                        }
+                        } */
                 ?>
-                 <p class="btn-outline-light py-3 px-4"><?php echo $response?></p>
+                
+                 <!-- <p class="btn-outline-light py-3 px-4"><?php echo $response?></p> -->
                 
                 </div>
             </div>
