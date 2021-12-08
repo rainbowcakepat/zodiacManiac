@@ -805,7 +805,7 @@ if (isset($_POST['send'])){
                             $data->lucky_time . " and current mood is " . $data->mood . ".";                        
                         }   
                               //SERIALIZATION
-                              $ser = serialize(array($response, $response));
+                              $ser = serialize(array($response));
                               file_put_contents($_COOKIE['fname'] . ".txt", $ser);
       
                     
