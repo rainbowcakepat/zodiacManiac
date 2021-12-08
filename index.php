@@ -8,9 +8,14 @@ if (isset($_POST['send'])){
     setcookie('fname', $fname, time()+1800);
     setcookie('bday', $bday, time()+1800);
     header('Location: index.php');
+} else if (isset($_POST['reset'])) {
+    setcookie('fname', $fname, time()-1);
+    setcookie('bday', $bday, time()-1);
+    header('Location: index.php');
 }
 
 ?>
+
 
 
 <!DOCTYPE html>
