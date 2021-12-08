@@ -69,7 +69,7 @@ if (isset($_POST['send'])){
                             
                             <h1 class="text-white display-1 lh-1 mb-3">Welcome to Zodiac Maniac!</h1>
                             <p class="text-white lead fw-normal text-white-50 mb-5">It's time! the constellations are here to tell your brightest destiny, know your fate in just one click</p>
-                            <div class="d-flex flex-column flex-lg-row align-items-center mb-5">
+                            <div class="d-flex flex-column flex-lg-row align-items-center mb-1">
                                 <form method="post" action="index.php">
                                     <span class="text-white lead fw-normal mb-5">Name: </span> 
                                     <input type="text" id="fullName" name="fullName" placeholder="Enter your full name    " style="background-color: white; border-radius: 5px" required><br><br>
@@ -78,7 +78,14 @@ if (isset($_POST['send'])){
                                     <input type="submit" name="send" value="  Send to the stars 🌠" style="border-radius: 10px; background-color: #FFC0CB;"><br><br>
                                 </form>
                             </div>
+      
+                            <form method="post" action="index.php">
+                                    <input type="submit" name="reset" value=" Reset 🔁" style="border-radius: 10px; background-color: #D3D3D3; "><br><br>
+                            </form>
                         </div>
+
+                     
+
                     </div>
                     <div class="col-lg-6">
                         <div class="masthead-device-mockup">
