@@ -68,7 +68,7 @@ if (isset($_POST['send'])){
                         <div class="mb-5 mb-lg-0 text-center text-lg-start" >
                             
                             <h1 class="text-white display-1 lh-1 mb-3">Welcome to Zodiac Maniac!</h1>
-                            <p class="text-white lead fw-normal text-white-50 mb-5">It's time! the constellations are here to tell your brightest destiny, know your fate in just one click</p>
+                            <p class="text-white lead fw-normal text-white-50 mb-5">It's time! The constellations are here to tell your brightest destiny, know your fate in just one click.</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                                 <form method="post" action="index.php">
                                     <span class="text-white lead fw-normal mb-5">Name: </span> 
