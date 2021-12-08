@@ -69,7 +69,7 @@ if (isset($_POST['send'])){
                                     <span class="text-white lead fw-normal mb-5">Name: </span> 
                                     <input type="text" id="fullName" name="fullName" placeholder="Enter your full name    " style="background-color: white; border-radius: 5px" required><br><br>
                                     <span class="text-white lead fw-normal mb-5">Birthday: </span> 
-                                    <input type="date" id="birthday" name="birthday" style="background-color: white; border-radius: 5px; width: 200px" required><br><br>
+                                    <input type="date" id="birthday" name="birthday" max='<?php echo date('Y-m-d');?>' style="background-color: white; border-radius: 5px; width: 200px" required><br><br>
                                     <input type="submit" name="send" value="  Send to the stars 🌠" style="border-radius: 10px; background-color: #FFC0CB;"><br><br>
                                 </form>
                             </div>
