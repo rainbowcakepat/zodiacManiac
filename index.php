@@ -145,7 +145,6 @@ if (isset($_POST['send'])){
 ?>
                            
                         </div>
-                        <!-- <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" /> -->
                     </div>
                 </div>
             </div>
@@ -234,22 +233,10 @@ if (isset($_POST['send'])){
                                                             echo "Capricorn is the 10th sign of the zodiac, considered as governing the period from about December 22 to about January 19.";
                                                         }
 
-
-                                                        
-
-                                                        /*
-                                                        
-                                                        Dagdagan niyo dito
-
-
-                                                        */
-
-
                                                         else {
                                                             echo  "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”.";
                                                         }
-                                                       
-                                                       
+                                                           
                                                       
                                                     } else {
                                                         
@@ -323,21 +310,12 @@ if (isset($_POST['send'])){
                                                         else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
                                                             echo "Capricorns tap into their inner fortitude to overcome whatever stands between them and their long-term goals and they don’t let anything distract them from getting ahead.";
                                                         }
-                                                       
-                                                       /*
-                                                       
-                                                       Dagdagan niyo dito
-
-
-                                                       */
-
-
+                                             
 
                                                        else {
                                                            echo  "Unleash the inner you! Know more about yourself through the constellations.";
                                                        }
-                                                      
-                                                      
+                                                        
                                                      
                                                    } else {
                                                        
@@ -356,8 +334,6 @@ if (isset($_POST['send'])){
                                                 public $type; //no initial value
                                                 
                                                 public abstract function display(); //declare bc depende sa class iimplement
-                                            
-                                                // public abstract function display();
                                             
                                                 function __construct($type) { //needs a constructor
                                                     $this->type = $type;
@@ -428,15 +404,7 @@ if (isset($_POST['send'])){
                                                             echo "The last earth sign of the zodiac, Capricorn is represented by the sea goat, a mythological creature with the body of a goat and tail of a fish.";
                                                         }
                                                        
-                                                       /*
-                                                       
-                                                       Dagdagan niyo dito
-
-
-                                                       */
-
-
-
+                                                    
                                                        else {
                                                            echo "Among the four astrological elements associated with the Zodiac signs, are you from the Fire, Air, Water or Earth element?";
                                                        }
@@ -515,16 +483,7 @@ if (isset($_POST['send'])){
                                                         else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)) {
                                                             echo "The signs most compatible with Capricorn are fellow earth signs Taurus and Virgo, and water signs Scorpio and Pisces. ";
                                                         }
-                                                       
-                                                       /*
-                                                       
-                                                       Dagdagan niyo dito
-
-
-                                                       */
-
-
-
+                                      
                                                        else {
                                                            echo "Looking for a soulmate? See which sign is compatible with yours";
                                                        }
@@ -615,16 +574,7 @@ if (isset($_POST['send'])){
                                                         }
 
                                                     
-                                                       /*
-                                                       
-                                                       Dagdagan niyo dito
-                                                       gayahin niyo na lang yung pagpapalit ng picture kemerut 
-
-
-                                                       */
-
-
-
+                 
                                                        else {
                                                         $images = "assets/img/planet.png";
                                                         echo "The Ruling Planet of the different Zodiac Signs symbolizes the kind of personality, energy and drive that a person expresses. Planets greatly influence how you act based on your cosmic characteristics.";
@@ -762,22 +712,11 @@ if (isset($_POST['send'])){
                         Horoscope
                     </h2>
                    
-                    <!--
-                        
-                Pachange na lang ng mga sign sign (if-else) tapos kuhanin lang yung header na description (check docs)
-
-                     -->
-
-                    <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a> -->
-                    
                     <?php
 
-                        //Serialization
+                        //API IMPLEMENTATION
                         if (isset($_COOKIE['fname']) && isset($_COOKIE['bday'])) {
 
-                            //$ser = serialize(array($response, $response));
-                            //file_put_contents($_COOKIE['fname'] . ".txt", $ser);
-    
                             $monthWord = date("F",strtotime($_COOKIE['bday']));
                             $day =  date("d",strtotime($_COOKIE['bday']));
 
@@ -859,7 +798,7 @@ if (isset($_POST['send'])){
                         curl_close($curl);
 
                         if ($err) {
-                            $response = "hello";
+                            $response = "Find out about your horoscope, lucky color, lucky time, lucky number, and mood today. Just enter your name and birthday then send it to the stars!";
                         } else {
                             $data = json_decode($response);
                             $response = $data->description . " Your lucky color is said to be " . $data->color . " and your lucky number is " . $data->lucky_number . ". Your Lucky time is " . 
@@ -876,7 +815,7 @@ if (isset($_POST['send'])){
                         
                 else {
                             $response = "Find out about your horoscope, lucky color, lucky time, lucky number, and mood today. Just enter your name and birthday then send it to the stars!";
-                            //$response2 = "hi";
+                      
                         }
 
                 ?>
