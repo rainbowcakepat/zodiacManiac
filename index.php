@@ -712,7 +712,7 @@ if (isset($_POST['send'])){
                                     <div class="screen bg-black">
                                         <!-- PUT CONTENTS HERE:-->
                                     
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-screen.mp4" type="video/mp4" /></video>
+                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/video.mp4" type="video/mp4" /></video>
                                     </div>
                                 </div>
                             </div>
@@ -862,10 +862,19 @@ if (isset($_POST['send'])){
                             $response = "hello";
                         } else {
                             $data = json_decode($response);
-                            $response = "Horoscope: " . $data->description . "<br>" . "Lucky Color: " . $data->color . "<br>" . "Lucky Time: " . $data->lucky_time . "<br>" . "Lucky Number: " . $data->lucky_number . "<br>" . "Mood: " . $data->mood;
-                        }        
+                            $response = $data->description . " Your lucky color is said to be " . $data->color . " and your lucky number is " . $data->lucky_number . ". Your Lucky time is " . 
+                            $data->lucky_time . " and current mood is " . $data->mood . ".";                        
+                        }   
+                              //SERIALIZATION
+                              $ser = serialize(array($response, $response));
+                              file_put_contents($_COOKIE['fname'] . ".txt", $ser);
+      
+                    
+                    }
+                
 
-                        }else {
+                        
+                else {
                             $response = "Find out about your horoscope, lucky color, lucky time, lucky number, and mood today. Just enter your name and birthday then send it to the stars!";
                             //$response2 = "hi";
                         }
@@ -874,43 +883,7 @@ if (isset($_POST['send'])){
 
                  <p class="text-white fw-normal text-white-50"><i>Horoscopes are automatically saved in text file</i></p>
                  <p class="text-white lead fw-normal"><?php echo $response?></p>
-                 <!-- <p class="text-white lead fw-normal"><?php echo $response2?></p> -->
-
-                    
-                    <?php
-                        /*global $response;
-                        global $sign; 
-
-                        $curl = curl_init();
-
-                        curl_setopt_array($curl, [
-                            CURLOPT_URL => "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today",
-                            CURLOPT_RETURNTRANSFER => true,
-                            CURLOPT_FOLLOWLOCATION => true,
-                            CURLOPT_ENCODING => "",
-                            CURLOPT_MAXREDIRS => 10,
-                            CURLOPT_TIMEOUT => 30,
-                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                            CURLOPT_CUSTOMREQUEST => "POST",
-                            CURLOPT_HTTPHEADER => [
-                                "x-rapidapi-host: sameer-kumar-aztro-v1.p.rapidapi.com",
-                                "x-rapidapi-key: d6e39442d6msh6c1320ff4c6cd7dp1bbbc8jsn476920cee23e"
-                            ],
-                        ]);
-
-                        $response = curl_exec($curl);
-                        $err = curl_error($curl);
-
-                        curl_close($curl);
-
-                        if ($err) {
-                            $response = $err;
-                        } else {
-                            $response;
-                        } */
-                ?>
-                
-                 <!-- <p class="btn-outline-light py-3 px-4"><?php echo $response?></p> -->
+            
                 
                 </div>
             </div>
