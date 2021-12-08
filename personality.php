@@ -104,7 +104,7 @@ if($conn -> connect_error){
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Zodiac Maniac</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/galaxyLogo.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/zod.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -149,7 +149,6 @@ if($conn -> connect_error){
               </video>
                             <h1 class="text-white display-1 lh-1 mb-3">What's your Personality Like?</h1>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <!-- <p class="text-muted mb-0"><?php echo $displayPersonality ?></p> -->
                             <p class="text-white lead fw-normal"><?php echo $displayPersonality ?></p>
                            
                             <br>
