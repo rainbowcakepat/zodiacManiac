@@ -520,7 +520,7 @@ if (isset($_POST['send'])){
                                                         //Aquarius
                                                         else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
                                                             $images = "assets/img/uranus.png";
-                                                            echo "The Zodiac Sign Aquarius is ruled by the planet Uranus which signifies a person being uncommon or strange to many because they are highly unique and talented. Aguarius people are truly clever that they love being challenged and futuristic.";
+                                                            echo "The Zodiac Sign Aquarius is ruled by the planet Uranus which signifies a person being uncommon or strange to many because they are highly unique and talented. Aquarius people are truly clever that they love being challenged and futuristic.";
                                                         }
                                                         //Virgo
                                                         else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
