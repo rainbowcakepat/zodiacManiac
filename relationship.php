@@ -90,7 +90,7 @@ if($conn -> connect_error){
                 }    
     }
     else{
-        $displayRelationship = "Looking for a soulmate? See which sign is compatible with yours.";
+        $displayRelationship = "Looking for a soulmate? See which sign is compatible with yours. Just enter your name and birthday then send it to the stars!";
     }
 ?>
 

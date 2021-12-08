@@ -91,9 +91,12 @@ if($conn -> connect_error){
     }
 
     else{
-        $displayPersonality = "Unleash the inner you! Know more about yourself through the constellations.";
+        $displayPersonality = "Unleash the inner you! Know more about yourself through the constellations. Just enter your name and birthday then send it to the stars!";
     }
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
