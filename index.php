@@ -396,7 +396,7 @@ if (isset($_POST['send'])){
 
                                                         //Sagittarius
                                                         else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
-                                                            echo "The final fire sign of the zodiac, Sagittarius traits are unlike any other sign of the zodiac; they're totally unique to this brazen spirit.";
+                                                            echo "The final fire sign of the zodiac, Sagittarius traits are unlike any other sign of the zodiac. They are totally unique to this brazen spirit.";
                                                         }
 
                                                         //Capricorn
@@ -535,12 +535,12 @@ if (isset($_POST['send'])){
                                                         //Gemini
                                                         else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
                                                             $images = "assets/img/mercury.png";
-                                                            echo "The Zodiac Sign Gemini is ruled by the planet Mercury which brings Geminis their ability to open their minds and absorb and process information more quickly than any other zodiac sign..";
+                                                            echo "The Zodiac Sign Gemini is ruled by the planet Mercury which brings Geminis their ability to open their minds and absorb and process information more quickly than any other zodiac sign.";
                                                         }
                                                         //Libra
                                                         else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                                                             $images = "assets/img/venus.png";
-                                                            echo "The Zodiac Sign Libra is ruled by the planet Venus which is the planet of love, harmony, and relationships. Libras are a natural mediator; they appreciate fairness and honesty while working hard to protect those they love. Their relationships mean a lot to them. They take pride in being a good friend and partner and look for those qualities in others.";
+                                                            echo "The Zodiac Sign Libra is ruled by the planet Venus which is the planet of love, harmony, and relationships. Libras are a natural mediator, they appreciate fairness and honesty while working hard to protect those they love. Their relationships mean a lot to them. They take pride in being a good friend and partner and look for those qualities in others.";
                                                         }
                                                         //Pisces
                                                         else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)) {
@@ -560,7 +560,7 @@ if (isset($_POST['send'])){
                                                         //Scorpio
                                                         else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)) {
                                                             $images = "assets/img/pluto.png";
-                                                            echo "The Zodiac Sign Scorpio is ruled by the planet Pluto which is the planet of darkness, the subconscious, death and rebirth. Not exactly lighthearted stuff. But they don’t like when things are lighthearted; they crave mystery and intensity. Pluto plays a part in their never-ending fascination with all things hush-hush and underground. This ability to get in touch with their unconscious self makes them one of the most powerful signs in the zodiac.";
+                                                            echo "The Zodiac Sign Scorpio is ruled by the planet Pluto which is the planet of darkness, the subconscious, death and rebirth. Not exactly lighthearted stuff. But they don’t like when things are lighthearted, they crave mystery and intensity. Pluto plays a part in their never-ending fascination with all things hush-hush and underground. This ability to get in touch with their unconscious self makes them one of the most powerful signs in the zodiac.";
                                                         }
                                                         //Sagittarius
                                                         else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)) {
