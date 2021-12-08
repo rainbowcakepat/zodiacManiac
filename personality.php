@@ -74,7 +74,7 @@ if($conn -> connect_error){
 
             //Capricorn
             else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)){
-                $z = 'Sagittarius';
+                $z = 'Capricorn';
             }
 
             $sql = "SELECT personality from zodiacmaniacusers WHERE zodiacSign = '$z'";
