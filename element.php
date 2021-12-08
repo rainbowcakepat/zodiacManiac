@@ -48,7 +48,7 @@ if($conn -> connect_error){
             }
             
             //Cancer
-            if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {                                       
+            else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {                                       
                 $z = 'Cancer';
             }
 
