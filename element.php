@@ -75,8 +75,8 @@ if($conn -> connect_error){
             //Capricorn
             else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)){
                 $z = 'Capricorn';
-            }else{
-                $displayElement = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”."
+            } else{
+                $displayElement = "Among the four astrological elements associated with the Zodiac signs, are you from the Fire, Air, Water or Earth element? Know by entering your name and birthday then send it to the stars!"; 
             }
 
 
@@ -90,8 +90,14 @@ if($conn -> connect_error){
                 }
                 else{
                     $displayElement = "No records to display." . "<br/>";
-                }    
-    }
+                }   
+            }
+            
+            else {
+                $displayElement = "Among the four astrological elements associated with the Zodiac signs, are you from the Fire, Air, Water or Earth element? Know by entering your name and birthday then send it to the stars!"; 
+            }
+    
+    
 ?>
 
 <!DOCTYPE html>
@@ -100,7 +106,7 @@ if($conn -> connect_error){
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Zodiac Maniac</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/galaxyLogo.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/zodiacSigns.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->

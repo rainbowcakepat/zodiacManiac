@@ -88,8 +88,8 @@ if($conn -> connect_error){
                 $z = 'Capricorn';
                 $images = "assets/zodiac/capricorn.png";  
             }else{
-                
-                $displayZodiacSign = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”."
+                $z = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals. Know your sign by entering your name and birthday then send it to the stars!"; 
+                $images = "assets/zodiac/zodiacSigns.png";  
             }
 
             $sql = "SELECT zodiac from zodiacmaniacusers WHERE zodiacSign = '$z'";
@@ -104,6 +104,11 @@ if($conn -> connect_error){
                     $displayZodiacSign = "No records to display." . "<br/>";
                 }    
     }
+    else{
+        $images = "assets/zodiac/zodiacSigns.png";        
+        $displayZodiacSign = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals. Know your sign by entering your name and birthday then send it to the stars!"; 
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -112,7 +117,7 @@ if($conn -> connect_error){
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Zodiac Maniac</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/galaxyLogo.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/zodiacSigns.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->

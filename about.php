@@ -1,18 +1,10 @@
-<?php
-echo "about";
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Zodiac Maniac</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/galaxyLogo.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/zodiacSigns.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -28,7 +20,6 @@ echo "about";
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
                 <a class="navbar-brand fw-bold" href="#page-top">Zodiac Maniac</a>
-               
               
                 </div>
             </div>
