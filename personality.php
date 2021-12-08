@@ -148,11 +148,16 @@ if($conn -> connect_error){
                 <source src="assets/img/galaxy.mp4" type="video/mp4">
               </video>
                             <h1 class="text-white display-1 lh-1 mb-3">What's your Personality Like?</h1>
+                            <p class="text-white lead fw-normal text-white-50 mb-4">Here are the astrological descriptions that awaits you! Only here at Zodiac Maniac </p>
+
+                            <p class="text-white lead fw-normal text-white-50 mb-4"></p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                             <p class="text-white lead fw-normal"><?php echo $displayPersonality ?></p>
                            
                             <br>
                             </div>
+                            <br>
+
                             <form action="index.php">
                                 <input type="submit" name="back" value="  Go back to main menu 🌠" style="border-radius: 12px; background-color: #FFC0CB;"><br><br>
                             </form>

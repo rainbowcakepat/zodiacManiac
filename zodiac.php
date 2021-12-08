@@ -161,13 +161,14 @@ if($conn -> connect_error){
                 <source src="assets/img/galaxy.mp4" type="video/mp4">
               </video>
                             <h1 class="text-white display-1 lh-1 mb-3">Everything about your Zodiac sign</h1>
-                            <p class="text-white lead fw-normal text-white-50 mb-4"></p>
+                            <p class="text-white lead fw-normal text-white-50 mb-4">Here are the astrological descriptions that awaits you! Only here at Zodiac Maniac </p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                             <!-- <p class="text-muted mb-0"><?php echo $displayZodiacSign ?></p> -->
                             <p class="text-white lead fw-normal"><?php echo $displayZodiacSign ?></p>
                            
                             <br>
                             </div>
+                            <br>
                             <form action="index.php">
                                 <input type="submit" name="back" value="  Go back to main menu 🌠" style="border-radius: 12px; background-color: #FFC0CB;"><br><br>
                             </form>
