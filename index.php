@@ -257,7 +257,7 @@ if (isset($_POST['send'])){
                                                        $day =  date("d",strtotime($_COOKIE['bday']));
                                                        
                                                        //Leo
-                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                       if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                                                            echo "Leos are known to be born as natural leaders who are creative and eager to conquer everything.";
                                                        }
                                                        //Aquarius
@@ -350,7 +350,7 @@ if (isset($_POST['send'])){
                                                        $day =  date("d",strtotime($this->type));
                                                        
                                                        //Leo
-                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                       if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                                                            echo "Leo's have the powerful and active fire element in their nature";        
                                                        }
                                                        //Aquarius
@@ -430,7 +430,7 @@ if (isset($_POST['send'])){
                                                        $day =  date("d",strtotime($this->type));
                                                        
                                                        //Leo
-                                                       if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                       if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                                                         echo "The most compatible signs with a Leo are Aries, Scorpio and Aquarius";
                                                         }
                                                        //Aquarius
@@ -513,7 +513,7 @@ if (isset($_POST['send'])){
                                                        $day =  date("d",strtotime($this->type));
                                                        
                                                         //Leo
-                                                        if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                                                        if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                                                             $images = "assets/img/sun.png";
                                                             echo "The Zodiac Sign Leo is ruled by the Sun which signifies royalty, warmth and energy. As the sun is center of the solar system, Leos also loves to be the center of attention and is expressive in their creativity and self-confidence.";    
                                                         }
@@ -725,7 +725,7 @@ if (isset($_POST['send'])){
                         global $z;
 
                             //Leo
-                            if(($monthWord == "08" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
+                            if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                                 $z = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=leo&day=today";   
                             }
                             //Aquarius
