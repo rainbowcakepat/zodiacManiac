@@ -48,7 +48,7 @@ if($conn -> connect_error){
             }
             
             //Cancer
-            if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {                                       
+            else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {                                       
                 $z = 'Cancer';
             }
 
@@ -88,6 +88,9 @@ if($conn -> connect_error){
                 else{
                     $displayRelationship = "No records to display." . "<br/>";
                 }    
+    }
+    else{
+        $displayRelationship = "Looking for a soulmate? See which sign is compatible with yours.";
     }
 ?>
 
@@ -143,7 +146,7 @@ if($conn -> connect_error){
                             <h1 class="text-white display-1 lh-1 mb-3">Want to know about your Relationships?</h1>
                             <!-- <p class="text-white lead fw-normal text-white-50 mb-4">We are the second group from section 4-ITG, <br> presenting our Project for IT-ELEC3C</p> -->
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <p class="text-white lead fw-normal text-white-50 mb-4"><?php echo $displayRelationship ?></p>
+                            <p class="text-white lead fw-normal"><?php echo $displayRelationship ?></p>
                             <br>
                             </div>
                             <form action="index.php">

@@ -89,6 +89,10 @@ if($conn -> connect_error){
                     $displayPersonality = "No records to display." . "<br/>";
                 }    
     }
+
+    else{
+        $displayPersonality = "Unleash the inner you! Know more about yourself through the constellations.";
+    }
 ?>
 
 <!DOCTYPE html>
