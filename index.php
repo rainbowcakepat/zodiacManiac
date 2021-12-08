@@ -92,8 +92,8 @@ if (isset($_POST['send'])){
                     <div class="col-xl-8">
                         <div class="h2 fs-1 text-white mb-4">
                             
-                            <?php 
-                            
+                        <?php 
+
                             $guestInfo = "Hey, guest! The stars are re-aligning at your favor, discover what the vastness of the universe tells to your future!";
 
                             if (!isset($_COOKIE['fname']) && !isset($_COOKIE['bday'])) { 
@@ -102,27 +102,35 @@ if (isset($_POST['send'])){
 
 
                             } else {
-                        
-                                function calcutateAge($dateOfBirth){
+
+                                function calculateAge($dateOfBirth){
 
                                     $dateOfBirth = date("Y-m-d",strtotime($_COOKIE['bday']));
-                            
+
                                     $dateOfBirthObj = new DateTime($dateOfBirth);
                                     $dateNowObject = new DateTime();
-                            
+
                                     $difference = $dateOfBirthObj->diff($dateNowObject);
-                            
-                                    return $difference->y;
-                            
-                             }
-                                
+
+                                    //return $difference->y;
+
+                                    if($difference->y == 0) {
+                                        return 'less than a year old';
+                                    } else {
+                                        return $difference->y . ' years old';
+                                    }
+
+
+
+                            }
+
                                 echo 'Hey, ' . $_COOKIE['fname'] .  '! ' . '<br>';
-                                echo 'You are currently, ' . calcutateAge($_COOKIE['bday']) . ' years old';
+                                echo 'You are currently, ' . calculateAge($_COOKIE['bday']) ;
                                 echo ' and your birthday is on ' . date('F d Y', strtotime($_COOKIE['bday'])) . '<br>';
 
                             }
-                                
-                            ?>
+
+?>
                            
                         </div>
                         <!-- <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" /> -->
