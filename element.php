@@ -75,7 +75,10 @@ if($conn -> connect_error){
             //Capricorn
             else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)){
                 $z = 'Capricorn';
+            }else{
+                $displayElement = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”."
             }
+
 
             $sql = "SELECT element from zodiacmaniacusers WHERE zodiacSign = '$z'";
             $info = $conn -> query($sql);

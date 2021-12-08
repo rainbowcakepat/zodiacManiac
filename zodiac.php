@@ -88,6 +88,7 @@ if($conn -> connect_error){
                 $z = 'Capricorn';
                 $images = "assets/zodiac/capricorn.png";  
             }else{
+                
                 $displayZodiacSign = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals”."
             }
 
