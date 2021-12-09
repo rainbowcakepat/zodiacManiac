@@ -72,7 +72,7 @@ if($conn -> connect_error){
             }
 
             //Scorpio
-            else if(($monthWord == "October" && $day >= 24) || ($monthWord == "November" && $day <= 21)){
+            else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)){
                 $z = 'Scorpio';
                 $images = "assets/zodiac/scorpio.png";  
             }
