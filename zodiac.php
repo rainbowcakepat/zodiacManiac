@@ -12,7 +12,7 @@ $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 if($conn -> connect_error){
     die('Connection failed' . $conn -> connect_error);
 }
-    global $images;
+   
     global $info;
     global $z;
 
@@ -24,72 +24,72 @@ if($conn -> connect_error){
             //Leo
             if(($monthWord == "July" && $day >= 23) || ($monthWord == "August" && $day <= 22)) {
                 $z = 'Leo';    
-                $images = "assets/zodiac/leo.png";                                                        
+                                                                  
             }
             //Aquarius
             else if(($monthWord == "January" && $day >= 20) || ($monthWord == "February" && $day <= 18)) {
                 $z = 'Aquarius';
-                $images = "assets/zodiac/aquarius.png";  
+               
             }
             //Virgo
             else if(($monthWord == "August" && $day >= 23) || ($monthWord == "September" && $day <= 22)) {
                 $z = 'Virgo';   
-                $images = "assets/zodiac/virgo.png";  
+                
             } 
             //Taurus
             else if(($monthWord == "April" && $day >= 20) || ($monthWord == "May" && $day <= 20)) {
                 $z = 'Taurus';
-                $images = "assets/zodiac/taurus.png";  
+                 
             }
             //Gemini
             else if(($monthWord == "May" && $day >= 21) || ($monthWord == "June" && $day <= 20)) {
                 $z = 'Gemini';
-                $images = "assets/zodiac/gemini.png";  
+                
             }
 
             //Libra
             else if(($monthWord == "September" && $day >= 23) || ($monthWord == "October" && $day <= 22)) {
                 $z = 'Libra';
-                $images = "assets/zodiac/libra.png";  
+             
             }
             
             //Cancer
             else if(($monthWord == "June" && $day >= 21) || ($monthWord == "July" && $day <= 22)) {                                       
                 $z = 'Cancer';
-                $images = "assets/zodiac/cancer.png";  
+               
             }
 
             //Pisces
             else if(($monthWord == "February" && $day >= 19) || ($monthWord == "March" && $day <= 20)){
                 $z = 'Pisces';
-                $images = "assets/zodiac/pisces.png";  
+            
             }
 
             //Aries
             else if(($monthWord == "March" && $day >= 21) || ($monthWord == "April" && $day <= 19)){
                 $z = 'Aries';
-                $images = "assets/zodiac/aries.png";  
+                
             }
 
             //Scorpio
             else if(($monthWord == "October" && $day >= 23) || ($monthWord == "November" && $day <= 21)){
                 $z = 'Scorpio';
-                $images = "assets/zodiac/scorpio.png";  
+          
             }
 
             //Sagittarius
             else if(($monthWord == "November" && $day >= 22) || ($monthWord == "December" && $day <= 21)){
                 $z = 'Sagittarius';
-                $images = "assets/zodiac/sagittarius.png";  
+             
             }
 
             //Capricorn
             else if(($monthWord == "December" && $day >= 22) || ($monthWord == "January" && $day <= 19)){
                 $z = 'Capricorn';
-                $images = "assets/zodiac/capricorn.png";  
+           
             }else{
                 $z = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals. Know your sign by entering your name and birthday then send it to the stars!"; 
-                $images = "assets/zodiac/zodiacSigns.png";  
+                
             }
 
             $sql = "SELECT zodiac from zodiacmaniacusers WHERE zodiacSign = '$z'";
@@ -105,7 +105,7 @@ if($conn -> connect_error){
                 }    
     }
     else{
-        $images = "assets/zodiac/zodiacSigns.png";        
+  
         $displayZodiacSign = "Zodiac signs are constellations that originated from the greek term zōdiakos kyklos, meaning “circle of animals. Know your sign by entering your name and birthday then send it to the stars!"; 
     }
 
@@ -179,7 +179,7 @@ if($conn -> connect_error){
                     </div>
                     <div class="col-lg-6">
                         <div class="masthead-device-mockup">
-                            <img src="<?php echo $images ?>" alt="..." style="max-width: 100%; height: 100%" />
+                            <img src="assets/zodiac/zodiacSigns.png" alt="..." style="max-width: 100%; height: 100%" />
 
                         </div>
                     </div>
