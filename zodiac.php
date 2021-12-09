@@ -179,7 +179,7 @@ if($conn -> connect_error){
                     </div>
                     <div class="col-lg-6">
                         <div class="masthead-device-mockup">
-                            <img src="assets/zodiac/zodiacSigns.png" alt="..." style="max-width: 100%; height: 100%" />
+                            <img src="assets/img/zod.png" alt="..." style="max-width: 100%; height: 100%" />
 
                         </div>
                     </div>
