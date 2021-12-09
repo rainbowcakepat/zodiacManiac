@@ -1,9 +1,9 @@
 <?php 
 
 //4 variables
-$dbhost = 'remotemysql.com';
-$dbusername = 'uaagbxWNEM';
-$dbpassword = 'SWQTneKX5h';
+$dbhost = 'localhost';
+$dbusername = 'root';
+$dbpassword = '';
 $dbname = 'zodiacmaniac';
 
 //Access database
