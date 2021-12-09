@@ -662,7 +662,9 @@ if (isset($_POST['send'])){
                                     <div class="screen bg-black">
                                         <!-- PUT CONTENTS HERE:-->
                                     
-                                        <video muted="muted" autoplay="" loop="" style="width: 200%; height: 100%;  transform: rotate(90deg); margin-left: -50%"><source src="assets/img/galaxy.mp4" type="video/mp4" /></video>
+                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%;" ><source src="assets/img/video.mp4" type="video/mp4" /></video>
+                                        <!-- <video muted="muted" autoplay="" loop="" style="width: 200%; height: 100%;  transform: rotate(90deg); margin-left: -50%"><source src="assets/img/galaxy.mp4" type="video/mp4" /></video> -->
+
                                     </div>
                                 </div>
                             </div>
